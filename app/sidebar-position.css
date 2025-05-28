@@ -1,0 +1,12 @@
+/* Sidebar positioning for RTL mode */
+html[dir="rtl"] .dashboard-container {
+  flex-direction: row-reverse !important;
+}
+
+html[dir="rtl"] .dashboard-sidebar {
+  order: 2 !important;
+}
+
+html[dir="rtl"] .dashboard-main {
+  order: 1 !important;
+}

@@ -1,0 +1,594 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "videos": "Videos",
+    "avatars": "Avatars",
+    "mediaGeneration": "Media Generation",
+    "credits": "Credits",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout",
+    "signOut": "Sign out",
+    "signOutAllDevices": "Sign out of all devices",
+    "notifications": "Notifications",
+    "search": "Search...",
+    "save": "Save changes",
+    "saving": "Saving...",
+    "success": "Success",
+    "error": "Error",
+    "cancel": "Cancel",
+    "voices": "Voices",
+    "photos": "Photos",
+    "loading": "Loading...",
+    "viewAll": "View all",
+    "main": "Main",
+    "settings": "Settings",
+    "copyright": "© 2025 TopMaj Dashboard"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account settings and preferences",
+    "account": "Account",
+    "appearance": "Appearance",
+    "notifications": "Notifications",
+    "security": "Security",
+    "profileInfo": "Profile Information",
+    "profileDescription": "Update your account profile information",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "emailCannotChange": "Email cannot be changed",
+    "company": "Company",
+    "changeAvatar": "Change avatar",
+    "avatarSizeLimit": "JPG, GIF or PNG. 1MB max.",
+    "languageRegion": "Language and Region",
+    "languageRegionDescription": "Set your language and regional preferences",
+    "language": "Language",
+    "timezone": "Timezone",
+    "savePreferences": "Save preferences",
+    "theme": "Theme",
+    "themeDescription": "Customize the appearance of the dashboard",
+    "lightTheme": "Light theme",
+    "darkTheme": "Dark theme",
+    "systemTheme": "Use system theme",
+    "dashboardLayout": "Dashboard Layout",
+    "dashboardLayoutDescription": "Customize the layout of your dashboard",
+    "collapsedSidebar": "Collapsed sidebar by default",
+    "compactView": "Compact view",
+    "defaultLandingPage": "Default landing page",
+    "notificationPreferences": "Notification Preferences",
+    "notificationDescription": "Choose what notifications you want to receive",
+    "emailNotifications": "Email Notifications",
+    "inAppNotifications": "In-App Notifications",
+    "processingComplete": "Processing complete",
+    "newFeatures": "New features and updates",
+    "tips": "Tips and tutorials",
+    "changePassword": "Change Password",
+    "changePasswordDescription": "Update your password to keep your account secure",
+    "currentPassword": "Current password",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm password",
+    "updatePassword": "Update password",
+    "updating": "Updating...",
+    "twoFactorAuth": "Two-Factor Authentication",
+    "twoFactorDescription": "Add an extra layer of security to your account",
+    "setup2FA": "Setup 2FA",
+    "sessions": "Sessions",
+    "sessionsDescription": "Manage your active sessions and sign out from other devices",
+    "currentSession": "Current session",
+    "currentBrowser": "Current browser • Active now",
+    "selectTimezone": "Select timezone",
+    "selectDefaultPage": "Select default page",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "passwordTooShort": "Password must be at least 6 characters",
+    "profileUpdated": "Profile updated successfully",
+    "passwordUpdated": "Password updated successfully",
+    "preferencesUpdated": "Preferences updated successfully",
+    "signedOutAllDevices": "Signed out of all devices successfully",
+    "failedToFetchProfile": "Failed to fetch profile data",
+    "failedToUpdateProfile": "Failed to update profile",
+    "failedToUpdatePassword": "Failed to update password",
+    "failedToUpdatePreferences": "Failed to update preferences",
+    "failedToSignOut": "Failed to sign out of all devices"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to your HeyGen dashboard. Monitor your usage and recent activity.",
+    "welcomePrefix": "Welcome to your",
+    "welcomeSuffix": "dashboard. Monitor your usage and recent activity.",
+    "errorTitle": "Error Loading Dashboard",
+    "errorDescription": "There was an error loading your dashboard data. Please try refreshing the page.",
+    "loading": "Loading dashboard data...",
+    "metrics": {
+      "videos": {
+        "title": "Total Videos",
+        "fromLastWeek": "+3 from last week"
+      },
+      "avatars": {
+        "title": "Avatars",
+        "fromLastWeek": "+1 from last week"
+      },
+      "voices": {
+        "title": "Voice Clones",
+        "fromLastWeek": "+2 from last week"
+      },
+      "photos": {
+        "title": "Talking Photos",
+        "fromLastWeek": "+5 from last week"
+      }
+    },
+    "tabs": {
+      "overview": "Overview",
+      "analytics": "Analytics",
+      "usage": "Usage"
+    },
+    "usageOverview": {
+      "title": "Usage Overview",
+      "description": "Your API usage over the last 30 days"
+    },
+    "recentActivity": {
+      "title": "Recent Activity",
+      "description": "Your latest actions and updates"
+    },
+    "recentVideos": {
+      "title": "Recent Videos",
+      "description": "Your latest video creations",
+      "viewAll": "View all"
+    },
+    "videoMetrics": {
+      "title": "Video Metrics",
+      "description": "Performance of your recent videos"
+    },
+    "advancedAnalytics": {
+      "title": "Advanced Analytics",
+      "description": "Detailed performance metrics and insights",
+      "dashboardTitle": "Analytics Dashboard",
+      "comingSoon": "Detailed analytics will be available soon"
+    },
+    "apiUsage": {
+      "title": "API Usage",
+      "description": "Monitor your API usage and quotas",
+      "videoGeneration": "Video Generation",
+      "avatarCreation": "Avatar Creation",
+      "voiceCloning": "Voice Cloning",
+      "talkingPhotos": "Talking Photos",
+      "credits": "credits"
+    },
+    "overview": "Overview",
+    "recentActivity": "Recent Activity",
+    "recentVideos": "Recent Videos",
+    "videoMetrics": "Video Metrics",
+    "usageChart": "Usage Chart",
+    "totalVideos": "Total Videos",
+    "processingVideos": "Processing",
+    "completedVideos": "Completed",
+    "failedVideos": "Failed"
+  },
+  "videos": {
+    "title": "Videos",
+    "create": "Create Video",
+    "subtitle": "Create and manage your AI-generated videos",
+    "description": "Browse, create, and manage your video content",
+    "tabs": {
+      "all": "All Videos",
+      "avatar": "Avatar Videos",
+      "voice": "Voice Videos",
+      "talkingPhoto": "Talking Photos",
+      "upload": "Uploads",
+      "templates": "Templates",
+      "create": "Create"
+    },
+    "createNew": "Create New Video",
+    "noVideos": "No videos found",
+    "loading": "Loading videos...",
+    "error": "Error loading videos",
+    "retry": "Retry",
+    "filter": "Filter",
+    "sort": "Sort",
+    "search": "Search videos...",
+    "status": {
+      "processing": "Processing",
+      "completed": "Completed",
+      "failed": "Failed"
+    },
+    "actions": {
+      "view": "View",
+      "download": "Download",
+      "delete": "Delete",
+      "share": "Share",
+      "edit": "Edit"
+    },
+    "list": {
+      "processing": "Processing...",
+      "completed": "Completed",
+      "failed": "Failed",
+      "stored": "Stored",
+      "preview": "Preview",
+      "download": "Download",
+      "refreshStatus": "Refresh Status",
+      "saveToStorage": "Save to Storage",
+      "delete": "Delete",
+      "confirmDelete": "Are you sure you want to delete this video?",
+      "confirmDeleteDescription": "This action cannot be undone.",
+      "deleteVideo": "Delete Video",
+      "videoDeleted": "Video deleted successfully",
+      "errorDeleting": "Error deleting video",
+      "noVideos": "No videos found",
+      "tryAgain": "Try again",
+      "loadMore": "Load More",
+      "errors": {
+        "failedToLoad": "Failed to load videos",
+        "failedToDelete": "Failed to delete video",
+        "failedToRefresh": "Failed to refresh status",
+        "failedToSave": "Failed to save to storage"
+      },
+      "success": {
+        "saved": "Video saved to storage",
+        "deleted": "Video deleted successfully",
+        "statusRefreshed": "Status refreshed successfully"
+      },
+      "status": {
+        "completed": "Completed",
+        "processing": "Processing",
+        "stored": "Stored"
+      },
+      "actions": "Actions",
+      "openInNewTab": "Open in new tab",
+      "OpenInNewTab": "Open in new tab",
+      "loadingVideos": "Loading videos...",
+      "close": "Close"
+    },
+    "create": {
+      "title": "Create New Video",
+      "description": "Generate a professional AI video in minutes",
+      "creatingVideo": "Creating Video...",
+      "generateVideo": "Generate Video",
+      "tabs": {
+        "chooseAvatar": "1. Choose Avatar",
+        "selectVoice": "2. Select Voice",
+        "writeScript": "3. Write Script"
+      },
+      "nextSelectVoice": "Next: Select Voice",
+      "backChooseAvatar": "Back: Choose Avatar",
+      "nextWriteScript": "Next: Write Script",
+      "backSelectVoice": "Back: Select Voice",
+      "script": "Script",
+      "scriptPlaceholder": "Enter your video script here...",
+      "characters": "characters",
+      "voiceSpeed": "Voice Speed",
+      "selectedAvatarVoice": "Selected Avatar & Voice",
+      "creating": "Creating...",
+      "loadingAvatarsVoices": "Loading avatars and voices...",
+      "mayTakeMoment": "This may take a moment",
+      "errorLoadingData": "Error loading data",
+      "tryAgain": "Try Again",
+      "videoCreationStarted": "Video creation started successfully!",
+      "errors": {
+        "selectAvatar": "Please select an avatar",
+        "selectVoice": "Please select a voice",
+        "enterScript": "Please enter a script",
+        "failedToCreate": "Failed to create video. Please try again."
+      }
+    },
+    "layout": {
+      "title": "Videos",
+      "subtitle": "Create and manage your videos",
+      "createButton": "Create New",
+      "backToDashboard": "Back to Dashboard"
+    }
+  },
+  "avatars": {
+    "title": "Avatars",
+    "subtitle": "Create and manage your AI avatars",
+    "description": "Generate and customize avatars for your videos",
+    "tabs": {
+      "photoAvatars": "AI Photo Avatars",
+      "digitalHumans": "Digital Humans"
+    },
+    "photoAvatars": {
+      "title": "AI Photo Avatars",
+      "description": "Create realistic AI-generated photo avatars using Topmaj API",
+      "details": "Generate customized AI avatars with attributes like age, gender, ethnicity, and appearance. These avatars can be used in your videos to create engaging content.",
+      "manage": "Manage Photo Avatars"
+    },
+    "digitalHumans": {
+      "title": "Coming Soon: Digital Humans",
+      "description": "Create fully animated digital human avatars",
+      "details": "We're working on bringing digital human avatars to our platform. Stay tuned for updates!",
+      "comingSoon": "Coming Soon"
+    },
+    "create": {
+      "title": "Create New Avatar",
+      "description": "Generate a new AI avatar",
+      "generating": "Generating Avatar...",
+      "generate": "Generate Avatar"
+    },
+    "noAvatars": "No avatars found",
+    "loading": "Loading avatars...",
+    "error": "Error loading avatars",
+    "retry": "Retry",
+    "actions": {
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "use": "Use in Video"
+    }
+  },
+  "mediaGeneration": {
+    "title": "Media Generation",
+    "description": "Generate videos from images with AI",
+    "createNew": "Create New",
+    "tabs": {
+      "allGenerations": "All Generations",
+      "imageToVideo": "Image to Video",
+      "textToImage": "Text to Image",
+      "textToVideo": "Text to Video",
+      "imageToImage": "Image to Image"
+    },
+    "prompt": "Prompt",
+    "result": "Result",
+    "generating": "Generating...",
+    "processing": "Processing...",
+    "failed": "Generation failed",
+    "noPreview": "No preview available",
+    "refresh": "Refresh",
+    "refreshing": "Refreshing...",
+    "noGenerations": "No generations yet",
+    "createFirstVideo": "Create your first AI-generated video",
+    "yourGenerations": "Your Generations",
+    "types": {
+      "video": "Video",
+      "image": "Image"
+    },
+    "status": {
+      "completed": "Completed",
+      "failed": "Failed",
+      "processing": "Processing"
+    },
+    "actions": {
+      "delete": "Delete",
+      "download": "Download",
+      "open": "Open"
+    },
+    "download": {
+      "started": "Download started",
+      "description": "Your video download has started"
+    },
+    "errors": {
+      "failedToFetch": "Failed to fetch generations",
+      "failedToLoad": "Failed to load generations. Please try again.",
+      "failedToDelete": "Failed to delete generation. Please try again.",
+      "failedToDownload": "Failed to download video. Please try again.",
+      "enterPrompt": "Please enter a prompt",
+      "uploadImage": "Please upload an image",
+      "unknown": "An unknown error occurred"
+    },
+    "success": {
+      "deleted": "Generation deleted successfully"
+    },
+    "textToImage": {
+      "title": "Text to Image",
+      "description": "Generate images from text descriptions",
+      "promptPlaceholder": "Enter a detailed description of the image you want to generate...",
+      "generateButton": "Generate Image",
+      "generatingImage": "Generating image...",
+      "noImageYet": "No image generated yet. Enter a prompt and click \"Generate Image\"."
+    },
+    "textToVideo": {
+      "title": "Text to Video",
+      "description": "Generate videos from text descriptions",
+      "promptPlaceholder": "Enter a detailed description of the video you want to generate...",
+      "generateButton": "Generate Video",
+      "generatingVideo": "Generating video...",
+      "noVideoYet": "No video generated yet. Enter a prompt and click \"Generate Video\"."
+    },
+    "imageToImage": {
+      "title": "Image to Image",
+      "description": "Transform images using AI",
+      "uploadImage": "Upload Image",
+      "clickToUpload": "Click to upload an image",
+      "transformationPrompt": "Transformation Prompt",
+      "promptPlaceholder": "Describe how you want to transform the image...",
+      "transformButton": "Transform Image",
+      "transforming": "Transforming...",
+      "transformingImage": "Transforming image...",
+      "noImageTransformedYet": "No image transformed yet. Upload an image, enter a prompt, and click \"Transform Image\"."
+    },
+    "imageToVideo": {
+      "title": "Image to Video",
+      "description": "Turn still images into dynamic videos",
+      "uploadImage": "Upload Image",
+      "clickToUpload": "Click to upload an image",
+      "animationPrompt": "Animation Prompt",
+      "promptPlaceholder": "Describe how you want the image to be animated...",
+      "animateButton": "Animate Image",
+      "animating": "Animating...",
+      "animatingImage": "Animating image...",
+      "noVideoAnimatedYet": "No video animated yet. Upload an image, enter a prompt, and click \"Animate Image\"."
+    },
+    "generatedImage": "Generated image",
+    "transformedImage": "Transformed image",
+    "preview": "Preview"
+  },
+  "videoTranslations": {
+    "title": "Video Translations",
+    "description": "Translate your videos into multiple languages",
+    "createNew": "Create New Translation",
+    "createDescription": "Translate your videos into different languages using HeyGen's AI technology.",
+    "noTranslations": "No translations found",
+    "loading": "Loading translations...",
+    "status": {
+      "processing": "Processing",
+      "completed": "Completed",
+      "failed": "Failed"
+    },
+    "tabs": {
+      "create": "Create Translation",
+      "myTranslations": "My Translations"
+    },
+    "uploadVideo": "Upload Video",
+    "dragAndDrop": "Drag and drop your video file here or click to browse",
+    "selectVideo": "Select Video",
+    "uploading": "Uploading...",
+    "upload": "Upload",
+    "orEnterVideoUrl": "Or Enter Video URL",
+    "enterVideoUrlDescription": "Enter the URL of the video you want to translate",
+    "titleOptional": "Title (Optional)",
+    "titlePlaceholder": "My Translated Video",
+    "targetLanguage": "Target Language",
+    "selectLanguage": "Select a language",
+    "loadingLanguages": "Loading languages...",
+    "creatingTranslation": "Creating Translation...",
+    "createTranslation": "Create Translation",
+    "createFirstTranslation": "Create your first video translation to see it here",
+    "createdOn": "Created on",
+    "source": "Source",
+    "preview": "Preview",
+    "download": "Download",
+    "downloadSubtitles": "Download Subtitles",
+    "saveLocally": "Save Locally",
+    "refreshStatus": "Refresh Status",
+    "delete": "Delete",
+    "translatedVideoPreview": "Translated video preview",
+    "refreshing": "Refreshing",
+    "checkingStatus": "Checking translation status...",
+    "defaultTitle": "Translation to",
+    "happyScribeInfo": {
+      "title": "Subtitle Information",
+      "description": "Subtitles are generated using HappyScribe's transcription service"
+    },
+    "errors": {
+      "failedToLoadLanguages": "Failed to load supported languages",
+      "selectFile": "Please select a file to upload",
+      "failedToUpload": "Failed to upload file",
+      "provideVideoUrl": "Please upload a video or provide a video URL",
+      "selectTargetLanguage": "Please select a target language",
+      "accessDenied": "Access Denied",
+      "apiKeyNoAccess": "Your API key doesn't have access to the Video Translation feature. This feature requires a Scale or Enterprise tier subscription.",
+      "failedToCreate": "Failed to create translation. Please try again.",
+      "failedToDelete": "Failed to delete translation. Please try again.",
+      "databaseError": "Database Error",
+      "runMigration": "Please run the SQL migration script to create the video_translations table."
+    },
+    "warnings": {
+      "apiAccessWarning": "API Access Warning",
+      "featureRequiresSubscription": "The Video Translation feature requires a Scale or Enterprise tier HeyGen API subscription. You can still use the interface, but actual translations may not work."
+    },
+    "success": {
+      "fileUploaded": "File uploaded successfully",
+      "translationSubmitted": "Translation request submitted successfully",
+      "translationComplete": "Translation Complete",
+      "translationReady": "Your video translation is ready to view",
+      "translationDeleted": "Translation deleted successfully",
+      "subtitleSaved": "Subtitle content saved successfully"
+    }
+  },
+  "advancedTextToVideo": {
+    "title": "Advanced Text to Video",
+    "description": "Generate high-quality videos using Google Veo AI technology",
+    "createNew": "Create New Video",
+    "createDescription": "Generate professional videos from text descriptions using Google's advanced Veo AI model.",
+    "prompt": "Video Prompt",
+    "promptPlaceholder": "Describe the video you want to generate in detail. Be specific about scenes, actions, style, and mood...",
+    "aspectRatio": "Aspect Ratio",
+    "characters": "characters",
+    "generateButton": "Generate Video",
+    "generating": "Generating Video...",
+    "loading": "Loading generations...",
+    "yourGenerations": "Your Video Generations",
+    "yourGenerationsDescription": "Manage your Google Veo video generations",
+    "noGenerations": "No video generations yet",
+    "createFirstVideo": "Create your first AI-generated video using Google Veo",
+    "status": {
+      "processing": "Processing",
+      "completed": "Completed",
+      "failed": "Failed"
+    },
+    "refreshStatus": "Refresh Status",
+    "download": "Download",
+    "delete": "Delete",
+    "preview": "Preview",
+    "errors": {
+      "enterPrompt": "Please enter a video prompt",
+      "failedToGenerate": "Failed to generate video",
+      "failedToDelete": "Failed to delete generation",
+      "failedToDownload": "Failed to download video",
+      "unknown": "An unknown error occurred"
+    },
+    "success": {
+      "generationStarted": "Video Generation Started",
+      "generationStartedDescription": "Your video is being generated. This may take several minutes.",
+      "generationComplete": "Video Generation Complete",
+      "generationCompleteDescription": "Your video is ready to view and download",
+      "deleted": "Generation deleted successfully"
+    },
+    "download": {
+      "started": "Download started",
+      "description": "Your video download has started"
+    }
+  },
+  "credits": {
+    "title": "Credits",
+    "subtitle": "Manage your credits and subscription",
+    "description": "Manage your credits and subscription plans",
+    "availableCredits": "Available Credits",
+    "monthlyUsage": "Monthly Usage",
+    "currentPlan": "Current Plan",
+    "noPlan": "No Plan",
+    "creditsPerMonth": "credits/month",
+    "subscribeToPlan": "Subscribe to a plan to get started",
+    "manageSubscription": "Manage Subscription",
+    "upgradePlan": "Upgrade Plan",
+    "creditPackages": "Credit Packages",
+    "subscriptionPlans": "Subscription Plans",
+    "transactionHistory": "Transaction History",
+    "creditUsage": "Credit Usage",
+    "creditUsageDescription": "Credits are consumed when generating videos, creating avatars, or using other features. Different features may consume different amounts of credits.",
+    "loadingCredits": "Loading credits...",
+    "noPackagesFound": "No credit packages found. Purchase credits to get started.",
+    "oneTimePayment": "One-time payment",
+    "payWithStripe": "Pay with Stripe",
+    "payWithFatora": "Pay with Fatora",
+    "manualCreditPurchase": "Manual Credit Purchase",
+    "manualCreditDescription": "Use this option if Stripe checkout is unavailable",
+    "plan": "Plan",
+    "amount": "Amount",
+    "purchaseCredits": "Purchase Credits",
+    "currentSubscription": "Current Subscription",
+    "currentSubscriptionDescription": "You are currently subscribed to the {planName} plan. Your subscription will {renewalStatus}.",
+    "willRenew": "renew automatically",
+    "willEnd": "end on {date}",
+    "popular": "Popular",
+    "perMonth": "per month",
+    "currentPlanLabel": "Current Plan",
+    "subscribe": "Subscribe",
+    "recentTransactions": "Recent Transactions",
+    "yourCreditUsage": "Your credit usage and purchases",
+    "noTransactionsFound": "No transactions found",
+    "downloadStatement": "Download Statement",
+    "statementDownload": "Statement Download",
+    "statementDownloadDescription": "This feature would download a statement of your transactions in a real application.",
+    "fromLastMonth": "from last month",
+    "creditsRemaining": "credits remaining",
+    "purchasedOn": "Purchased on",
+    "usage": "Usage",
+    "neverExpires": "Never expires",
+    "expired": "Expired",
+    "expiresIn": "Expires in {days} days",
+    "expiresInOne": "Expires tomorrow",
+    "expiresInZero": "Expires today",
+    "paymentSuccessful": "Payment Successful",
+    "paymentSuccessfulDescription": "Your payment was processed successfully. Credits have been added to your account.",
+    "paymentCanceled": "Payment Canceled",
+    "paymentCanceledDescription": "Your payment was canceled. No charges were made.",
+    "paymentVerificationFailed": "Payment Verification Failed",
+    "paymentVerified": "Payment Verified",
+    "planActive": "Your {plan} plan is now active.",
+    "failedToLoadCredits": "Failed to load credits data. Please try again.",
+    "failedToVerifyPayment": "Failed to verify payment",
+    "processing": "Processing...",
+    "usage": "Usage",
+    "creditsActivePackage": "active credit package",
+    "creditsActivePackages": "active credit packages"
+  }
+}

@@ -1,0 +1,589 @@
+{
+  "common": {
+    "dashboard": "لوحة التحكم",
+    "videos": "الفيديوهات",
+    "avatars": "الصور الرمزية",
+    "mediaGeneration": "إنشاء الوسائط",
+    "credits": "الرصيد",
+    "settings": "الإعدادات",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "signOut": "تسجيل الخروج",
+    "signOutAllDevices": "تسجيل الخروج من جميع الأجهزة",
+    "notifications": "الإشعارات",
+    "search": "بحث...",
+    "save": "حفظ التغييرات",
+    "saving": "جاري الحفظ...",
+    "success": "تم بنجاح",
+    "error": "خطأ",
+    "cancel": "إلغاء",
+    "voices": "الأصوات",
+    "photos": "الصور المتحدثة",
+    "loading": "جاري التحميل...",
+    "viewAll": "عرض الكل",
+    "main": "الرئيسية",
+    "settings": "الإعدادات",
+    "copyright": "© 2025 لوحة تحكم TopMaj"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "subtitle": "إدارة إعدادات وتفضيلات حسابك",
+    "account": "الحساب",
+    "appearance": "المظهر",
+    "notifications": "الإشعارات",
+    "security": "الأمان",
+    "profileInfo": "معلومات الملف الشخصي",
+    "profileDescription": "تحديث معلومات ملفك الشخصي",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "email": "البريد الإلكتروني",
+    "emailCannotChange": "لا يمكن تغيير البريد الإلكتروني",
+    "company": "الشركة",
+    "changeAvatar": "تغيير الصورة الرمزية",
+    "avatarSizeLimit": "JPG أو GIF أو PNG. الحد الأقصى 1 ميجابايت.",
+    "languageRegion": "اللغة والمنطقة",
+    "languageRegionDescription": "تعيين تفضيلات اللغة والمنطقة",
+    "language": "اللغة",
+    "timezone": "المنطقة الزمنية",
+    "savePreferences": "حفظ التفضيلات",
+    "theme": "السمة",
+    "themeDescription": "تخصيص مظهر لوحة التحكم",
+    "lightTheme": "السمة الفاتحة",
+    "darkTheme": "السمة الداكنة",
+    "systemTheme": "استخدام سمة النظام",
+    "dashboardLayout": "تخطيط لوحة التحكم",
+    "dashboardLayoutDescription": "تخصيص تخطيط لوحة التحكم الخاصة بك",
+    "collapsedSidebar": "الشريط الجانبي مطوي افتراضيًا",
+    "compactView": "عرض مضغوط",
+    "defaultLandingPage": "الصفحة الرئيسية الافتراضية",
+    "notificationPreferences": "تفضيلات الإشعارات",
+    "notificationDescription": "اختر الإشعارات التي تريد تلقيها",
+    "emailNotifications": "إشعارات البريد الإلكتروني",
+    "inAppNotifications": "إشعارات داخل التطبيق",
+    "processingComplete": "اكتمال المعالجة",
+    "newFeatures": "ميزات وتحديثات جديدة",
+    "tips": "نصائح وبرامج تعليمية",
+    "changePassword": "تغيير كلمة المرور",
+    "changePasswordDescription": "تحديث كلمة المرور للحفاظ على أمان حسابك",
+    "currentPassword": "كلمة المرور الحالية",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "updatePassword": "تحديث كلمة المرور",
+    "updating": "جاري التحديث...",
+    "twoFactorAuth": "المصادقة الثنائية",
+    "twoFactorDescription": "إضافة طبقة إضافية من الأمان لحسابك",
+    "setup2FA": "إعداد المصادقة الثنائية",
+    "sessions": "الجلسات",
+    "sessionsDescription": "إدارة جلساتك النشطة وتسجيل الخروج من الأجهزة الأخرى",
+    "currentSession": "الجلسة الحالية",
+    "currentBrowser": "المتصفح الحالي • نشط الآن",
+    "selectTimezone": "اختر المنطقة الزمنية",
+    "selectDefaultPage": "اختر الصفحة الافتراضية",
+    "passwordsDoNotMatch": "كلمات المرور غير متطابقة",
+    "passwordTooShort": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+    "profileUpdated": "تم تحديث الملف الشخصي بنجاح",
+    "passwordUpdated": "تم تحديث كلمة المرور بنجاح",
+    "preferencesUpdated": "تم تحديث التفضيلات بنجاح",
+    "signedOutAllDevices": "تم تسجيل الخروج من جميع الأجهزة بنجاح",
+    "failedToFetchProfile": "فشل في جلب بيانات الملف الشخصي",
+    "failedToUpdateProfile": "فشل في تحديث الملف الشخصي",
+    "failedToUpdatePassword": "فشل في تحديث كلمة المرور",
+    "failedToUpdatePreferences": "فشل في تحديث التفضيلات",
+    "failedToSignOut": "فشل في تسجيل الخروج من جميع الأجهزة"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "welcome": "مرحبًا بك في لوحة تحكم HeyGen. راقب استخدامك والنشاطات الأخيرة.",
+    "welcomePrefix": "مرحبًا بك في لوحة تحكم",
+    "welcomeSuffix": "راقب استخدامك والنشاطات الأخيرة.",
+    "overview": "نظرة عامة",
+    "recentActivity": {
+      "title": "النشاط الأخير",
+      "description": "أحدث الإجراءات والتحديثات"
+    },
+    "recentVideos": {
+      "title": "الفيديوهات الأخيرة",
+      "description": "أحدث إنشاءات الفيديو",
+      "viewAll": "عرض الكل"
+    },
+    "videoMetrics": {
+      "title": "مقاييس الفيديو",
+      "description": "أداء الفيديوهات الأخيرة"
+    },
+    "usageChart": "مخطط الاستخدام",
+    "totalVideos": "إجمالي الفيديوهات",
+    "processingVideos": "قيد المعالجة",
+    "completedVideos": "مكتملة",
+    "failedVideos": "فشلت",
+    "tabs": {
+      "overview": "نظرة عامة",
+      "analytics": "التحليلات",
+      "usage": "الاستخدام"
+    },
+    "usageOverview": {
+      "title": "نظرة عامة على الاستخدام",
+      "description": "استخدام واجهة برمجة التطبيقات خلال الـ 30 يومًا الماضية"
+    },
+    "metrics": {
+      "videos": {
+        "title": "إجمالي الفيديوهات",
+        "fromLastWeek": "+3 من الأسبوع الماضي"
+      },
+      "avatars": {
+        "title": "الصور الرمزية",
+        "fromLastWeek": "+1 من الأسبوع الماضي"
+      },
+      "voices": {
+        "title": "نسخ الصوت",
+        "fromLastWeek": "+2 من الأسبوع الماضي"
+      },
+      "photos": {
+        "title": "الصور المتحدثة",
+        "fromLastWeek": "+5 من الأسبوع الماضي"
+      }
+    },
+    "advancedAnalytics": {
+      "title": "تحليلات متقدمة",
+      "description": "مقاييس أداء مفصلة ورؤى",
+      "dashboardTitle": "لوحة التحليلات",
+      "comingSoon": "ستتوفر التحليلات المفصلة قريبًا"
+    },
+    "apiUsage": {
+      "title": "استخدام واجهة برمجة التطبيقات",
+      "description": "مراقبة استخدام واجهة برمجة التطبيقات والحصص",
+      "videoGeneration": "إنشاء الفيديو",
+      "avatarCreation": "إنشاء الصور الرمزية",
+      "voiceCloning": "نسخ الصوت",
+      "talkingPhotos": "الصور المتحدثة",
+      "credits": "رصيد"
+    },
+    "errorTitle": "خطأ في تحميل لوحة التحكم",
+    "errorDescription": "حدث خطأ أثناء تحميل بيانات لوحة التحكم. يرجى تحديث الصفحة.",
+    "loading": "جاري تحميل بيانات لوحة التحكم..."
+  },
+  "videos": {
+    "title": "الفيديوهات",
+    "create": "إنشاء فيديو",
+    "subtitle": "إنشاء وإدارة الفيديوهات المولدة بالذكاء الاصطناعي",
+    "description": "تصفح وإنشاء وإدارة محتوى الفيديو الخاص بك",
+    "tabs": {
+      "all": "جميع الفيديوهات",
+      "avatar": "فيديوهات الصور الرمزية",
+      "voice": "فيديوهات الصوت",
+      "talkingPhoto": "الصور المتحدثة",
+      "upload": "المرفوعات",
+      "templates": "القوالب",
+      "create": "إنشاء"
+    },
+    "createNew": "إنشاء فيديو جديد",
+    "noVideos": "لم يتم العثور على فيديوهات",
+    "loading": "جاري تحميل الفيديوهات...",
+    "error": "خطأ في تحميل الفيديوهات",
+    "retry": "إعادة المحاولة",
+    "filter": "تصفية",
+    "sort": "ترتيب",
+    "search": "البحث في الفيديوهات...",
+    "status": {
+      "processing": "قيد المعالجة",
+      "completed": "مكتمل",
+      "failed": "فشل"
+    },
+    "actions": {
+      "view": "عرض",
+      "download": "تنزيل",
+      "delete": "حذف",
+      "share": "مشاركة",
+      "edit": "تعديل"
+    },
+    "list": {
+      "processing": "قيد المعالجة...",
+      "completed": "مكتمل",
+      "failed": "فشل",
+      "stored": "مخزن",
+      "preview": "معاينة",
+      "download": "تنزيل",
+      "refreshStatus": "تحديث الحالة",
+      "saveToStorage": "حفظ في التخزين",
+      "delete": "حذف",
+      "confirmDelete": "هل أنت متأكد أنك تريد حذف هذا الفيديو؟",
+      "confirmDeleteDescription": "لا يمكن التراجع عن هذا الإجراء.",
+      "deleteVideo": "حذف الفيديو",
+      "videoDeleted": "تم حذف الفيديو بنجاح",
+      "errorDeleting": "خطأ في حذف الفيديو",
+      "noVideos": "لم يتم العثور على فيديوهات",
+      "tryAgain": "حاول مرة أخرى",
+      "loadMore": "تحميل المزيد",
+      "errors": {
+        "failedToLoad": "فشل في تحميل الفيديوهات",
+        "failedToDelete": "فشل في حذف الفيديو",
+        "failedToRefresh": "فشل في تحديث الحالة",
+        "failedToSave": "فشل في الحفظ في التخزين"
+      },
+      "success": {
+        "saved": "تم حفظ الفيديو في التخزين",
+        "deleted": "تم حذف الفيديو بنجاح",
+        "statusRefreshed": "تم تحديث الحالة بنجاح"
+      },
+      "status": {
+        "completed": "مكتمل",
+        "processing": "قيد المعالجة...",
+        "stored": "مخزن"
+      },
+      "actions": "إجراءات",
+      "openInNewTab": "فتح في علامة تبويب جديدة",
+      "loadingVideos": "جاري تحميل الفيديوهات...",
+      "close": "إغلاق"
+    },
+    "create": {
+      "title": "إنشاء فيديو جديد",
+      "description": "إنشاء فيديو احترافي بالذكاء الاصطناعي في دقائق",
+      "creatingVideo": "جاري إنشاء الفيديو...",
+      "generateVideo": "إنشاء الفيديو",
+      "tabs": {
+        "chooseAvatar": "١. اختيار الصورة الرمزية",
+        "selectVoice": "٢. اختيار الصوت",
+        "writeScript": "٣. كتابة النص"
+      },
+      "nextSelectVoice": "التالي: اختيار الصوت",
+      "backChooseAvatar": "السابق: اختيار الصورة الرمزية",
+      "nextWriteScript": "التالي: كتابة النص",
+      "backSelectVoice": "السابق: اختيار الصوت",
+      "script": "النص",
+      "scriptPlaceholder": "أدخل نص الفيديو هنا...",
+      "characters": "حرف",
+      "voiceSpeed": "سرعة الصوت",
+      "selectedAvatarVoice": "الصورة الرمزية والصوت المختاران",
+      "creating": "جاري الإنشاء...",
+      "loadingAvatarsVoices": "جاري تحميل الصور الرمزية والأصوات...",
+      "mayTakeMoment": "قد يستغرق هذا لحظة",
+      "errorLoadingData": "خطأ في تحميل البيانات",
+      "tryAgain": "حاول مرة أخرى",
+      "videoCreationStarted": "بدأ إنشاء الفيديو بنجاح!",
+      "errors": {
+        "selectAvatar": "الرجاء اختيار صورة رمزية",
+        "selectVoice": "الرجاء اختيار صوت",
+        "enterScript": "الرجاء إدخال نص",
+        "failedToCreate": "فشل في إنشاء الفيديو. الرجاء المحاولة مرة أخرى."
+      }
+    },
+    "layout": {
+      "title": "الفيديوهات",
+      "subtitle": "إنشاء وإدارة الفيديوهات الخاصة بك",
+      "createButton": "إنشاء جديد",
+      "backToDashboard": "العودة إلى لوحة التحكم"
+    }
+  },
+  "avatars": {
+    "title": "الصور الرمزية",
+    "subtitle": "إنشاء وإدارة الصور الرمزية بالذكاء الاصطناعي",
+    "description": "إنشاء وتخصيص الصور الرمزية للفيديوهات الخاصة بك",
+    "tabs": {
+      "photoAvatars": "صور رمزية بالذكاء الاصطناعي",
+      "digitalHumans": "شخصيات رقمية"
+    },
+    "photoAvatars": {
+      "title": "صور رمزية بالذكاء الاصطناعي",
+      "description": "إنشاء صور رمزية واقعية مولدة بالذكاء الاصطناعي باستخدام واجهة برمجة تطبيقات Topmaj",
+      "details": "إنشاء صور رمزية مخصصة بالذكاء الاصطناعي مع سمات مثل العمر والجنس والعرق والمظهر. يمكن استخدام هذه الصور الرمزية في الفيديوهات الخاصة بك لإنشاء محتوى جذاب.",
+      "manage": "إدارة الصور الرمزية"
+    },
+    "digitalHumans": {
+      "title": "قريبًا: شخصيات رقمية",
+      "description": "إنشاء صور رمزية للشخصيات الرقمية المتحركة بالكامل",
+      "details": "نحن نعمل على إضافة صور رمزية للشخصيات الرقمية إلى منصتنا. ترقبوا التحديثات!",
+      "comingSoon": "قريبًا"
+    },
+    "create": {
+      "title": "إنشاء صورة رمزية جديدة",
+      "description": "إنشاء صورة رمزية جديدة بالذكاء الاصطناعي",
+      "generating": "جاري إنشاء الصورة الرمزية...",
+      "generate": "إنشاء صورة رمزية"
+    },
+    "noAvatars": "لم يتم العثور على صور رمزية",
+    "loading": "جاري تحميل الصور الرمزية...",
+    "error": "خطأ في تحميل الصور الرمزية",
+    "retry": "إعادة المحاولة",
+    "actions": {
+      "view": "عرض",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "use": "استخدام في الفيديو"
+    }
+  },
+  "mediaGeneration": {
+    "title": "إنشاء الوسائط",
+    "description": "إنشاء فيديوهات من الصور باستخدام الذكاء الاصطناعي",
+    "createNew": "إنشاء جديد",
+    "tabs": {
+      "allGenerations": "جميع الإنشاءات",
+      "imageToVideo": "صورة إلى فيديو",
+      "textToImage": "نص إلى صورة",
+      "textToVideo": "نص إلى فيديو",
+      "imageToImage": "صورة إلى صورة"
+    },
+    "prompt": "النص التوجيهي",
+    "result": "النتيجة",
+    "generating": "جاري الإنشاء...",
+    "processing": "جاري المعالجة...",
+    "failed": "فشل الإنشاء",
+    "noPreview": "لا تتوفر معاينة",
+    "refresh": "تحديث",
+    "refreshing": "جاري التحديث...",
+    "noGenerations": "لا توجد إنشاءات حتى الآن",
+    "createFirstVideo": "أنشئ أول فيديو بالذكاء الاصطناعي",
+    "yourGenerations": "إنشاءاتك",
+    "types": {
+      "video": "فيديو",
+      "image": "صورة"
+    },
+    "status": {
+      "completed": "مكتمل",
+      "failed": "فشل",
+      "processing": "قيد المعالجة"
+    },
+    "actions": {
+      "delete": "حذف",
+      "download": "تنزيل",
+      "open": "فتح"
+    },
+    "download": {
+      "started": "بدأ التنزيل",
+      "description": "بدأ تنزيل الفيديو الخاص بك"
+    },
+    "errors": {
+      "failedToFetch": "فشل في جلب الإنشاءات",
+      "failedToLoad": "فشل في تحميل الإنشاءات. يرجى المحاولة مرة أخرى.",
+      "failedToDelete": "فشل في حذف الإنشاء. يرجى المحاولة مرة أخرى.",
+      "failedToDownload": "فشل في تنزيل الفيديو. يرجى المحاولة مرة أخرى.",
+      "enterPrompt": "الرجاء إدخال نص توجيهي",
+      "uploadImage": "الرجاء رفع صورة",
+      "unknown": "حدث خطأ غير معروف"
+    },
+    "success": {
+      "deleted": "تم حذف الإنشاء بنجاح"
+    },
+    "textToImage": {
+      "title": "نص إلى صورة",
+      "description": "إنشاء صور من وصف نصي",
+      "promptPlaceholder": "أدخل وصفًا مفصلاً للصورة التي تريد إنشاءها...",
+      "generateButton": "إنشاء صورة",
+      "generatingImage": "جاري إنشاء الصورة...",
+      "noImageYet": "لم يتم إنشاء صورة بعد. أدخل نصًا توجيهيًا وانقر على \"إنشاء صورة\"."
+    },
+    "textToVideo": {
+      "title": "نص إلى فيديو",
+      "description": "إنشاء فيديوهات من وصف نصي",
+      "promptPlaceholder": "أدخل وصفًا مفصلاً للفيديو الذي تريد إنشاءه...",
+      "generateButton": "إنشاء فيديو",
+      "generatingVideo": "جاري إنشاء الفيديو...",
+      "noVideoYet": "لم يتم إنشاء فيديو بعد. أدخل نصًا توجيهيًا وانقر على \"إنشاء فيديو\"."
+    },
+    "imageToImage": {
+      "title": "صورة إلى صورة",
+      "description": "تحويل الصور باستخدام الذكاء الاصطناعي",
+      "uploadImage": "رفع صورة",
+      "clickToUpload": "انقر لرفع صورة",
+      "transformationPrompt": "نص التحويل التوجيهي",
+      "promptPlaceholder": "صف كيف تريد تحويل الصورة...",
+      "transformButton": "تحويل الصورة",
+      "transforming": "جاري التحويل...",
+      "transformingImage": "جاري تحويل الصورة...",
+      "noImageTransformedYet": "لم يتم تحويل أي صورة بعد. قم برفع صورة، وأدخل نصًا توجيهيًا، وانقر على \"تحويل الصورة\"."
+    },
+    "imageToVideo": {
+      "title": "صورة إلى فيديو",
+      "description": "تحويل الصور الثابتة إلى فيديوهات متحركة",
+      "uploadImage": "رفع صورة",
+      "clickToUpload": "انقر لرفع صورة",
+      "animationPrompt": "نص الرسوم المتحركة التوجيهي",
+      "promptPlaceholder": "صف كيف تريد تحريك الصورة...",
+      "animateButton": "تحريك الصورة",
+      "animating": "جاري التحريك...",
+      "animatingImage": "جاري تحريك الصورة...",
+      "noVideoAnimatedYet": "لم يتم تحريك أي فيديو بعد. قم برفع صورة، وأدخل نصًا توجيهيًا، وانقر على \"تحريك الصورة\"."
+    },
+    "generatedImage": "الصورة المنشأة",
+    "transformedImage": "الصورة المحولة",
+    "preview": "معاينة"
+  },
+  "videoTranslations": {
+    "title": "ترجمة الفيديو",
+    "description": "ترجم مقاطع الفيديو الخاصة بك إلى لغات متعددة",
+    "createNew": "إنشاء ترجمة جديدة",
+    "createDescription": "ترجم مقاطع الفيديو الخاصة بك إلى لغات مختلفة باستخدام تقنية الذكاء الاصطناعي من HeyGen.",
+    "noTranslations": "لم يتم العثور على ترجمات",
+    "loading": "جاري تحميل الترجمات...",
+    "status": {
+      "processing": "قيد المعالجة",
+      "completed": "مكتمل",
+      "failed": "فشل"
+    },
+    "tabs": {
+      "create": "إنشاء ترجمة",
+      "myTranslations": "ترجماتي"
+    },
+    "uploadVideo": "رفع فيديو",
+    "dragAndDrop": "اسحب وأفلت ملف الفيديو هنا أو انقر للتصفح",
+    "selectVideo": "اختر فيديو",
+    "uploading": "جاري الرفع...",
+    "upload": "رفع",
+    "orEnterVideoUrl": "أو أدخل رابط الفيديو",
+    "enterVideoUrlDescription": "أدخل رابط الفيديو الذي تريد ترجمته",
+    "titleOptional": "العنوان (اختياري)",
+    "titlePlaceholder": "الفيديو المترجم الخاص بي",
+    "targetLanguage": "اللغة المستهدفة",
+    "selectLanguage": "اختر لغة",
+    "loadingLanguages": "جاري تحميل اللغات...",
+    "creatingTranslation": "جاري إنشاء الترجمة...",
+    "createTranslation": "إنشاء ترجمة",
+    "createFirstTranslation": "أنشئ أول ترجمة فيديو لتظهر هنا",
+    "createdOn": "تم الإنشاء في",
+    "source": "المصدر",
+    "preview": "معاينة",
+    "download": "تنزيل",
+    "downloadSubtitles": "تنزيل الترجمات",
+    "saveLocally": "حفظ محليًا",
+    "refreshStatus": "تحديث الحالة",
+    "delete": "حذف",
+    "translatedVideoPreview": "معاينة الفيديو المترجم",
+    "refreshing": "جاري التحديث",
+    "checkingStatus": "جاري التحقق من حالة الترجمة...",
+    "defaultTitle": "ترجمة إلى",
+    "happyScribeInfo": {
+      "title": "معلومات الترجمة",
+      "description": "يتم إنشاء الترجمات باستخدام خدمة النسخ من HappyScribe"
+    },
+    "errors": {
+      "failedToLoadLanguages": "فشل في تحميل اللغات المدعومة",
+      "selectFile": "الرجاء اختيار ملف للرفع",
+      "failedToUpload": "فشل في رفع الملف",
+      "provideVideoUrl": "الرجاء رفع فيديو أو تقديم رابط فيديو",
+      "selectTargetLanguage": "الرجاء اختيار اللغة المستهدفة",
+      "accessDenied": "تم رفض الوصول",
+      "apiKeyNoAccess": "مفتاح API الخاص بك ليس لديه حق الوصول إلى ميزة ترجمة الفيديو. تتطلب هذه الميزة اشتراكًا من فئة Scale أو Enterprise.",
+      "failedToCreate": "فشل في إنشاء الترجمة. الرجاء المحاولة مرة أخرى.",
+      "failedToDelete": "فشل في حذف الترجمة. الرجاء المحاولة مرة أخرى.",
+      "databaseError": "خطأ في قاعدة البيانات",
+      "runMigration": "الرجاء تشغيل نص ترحيل SQL لإنشاء جدول video_translations."
+    },
+    "warnings": {
+      "apiAccessWarning": "تحذير الوصول إلى API",
+      "featureRequiresSubscription": "تتطلب ميزة ترجمة الفيديو اشتراكًا من فئة Scale أو Enterprise في HeyGen API. يمكنك استخدام الواجهة، ولكن قد لا تعمل الترجمات الفعلية."
+    },
+    "success": {
+      "fileUploaded": "تم رفع الملف بنجاح",
+      "translationSubmitted": "تم تقديم طلب الترجمة بنجاح",
+      "translationComplete": "اكتملت الترجمة",
+      "translationReady": "ترجمة الفيديو الخاصة بك جاهزة للعرض",
+      "translationDeleted": "تم حذف الترجمة بنجاح",
+      "subtitleSaved": "تم حفظ محتوى الترجمة بنجاح"
+    }
+  },
+  "advancedTextToVideo": {
+    "title": "نص متقدم إلى فيديو",
+    "description": "إنشاء فيديوهات عالية الجودة باستخدام تقنية Google Veo AI",
+    "createNew": "إنشاء فيديو جديد",
+    "createDescription": "إنشاء فيديوهات احترافية من الأوصاف النصية باستخدام نموذج Veo AI المتقدم من Google.",
+    "prompt": "نص الفيديو التوجيهي",
+    "promptPlaceholder": "صف الفيديو الذي تريد إنشاءه بالتفصيل. كن محددًا حول المشاهد والإجراءات والأسلوب والمزاج...",
+    "aspectRatio": "نسبة العرض إلى الارتفاع",
+    "characters": "حرف",
+    "generateButton": "إنشاء فيديو",
+    "generating": "جاري إنشاء الفيديو...",
+    "loading": "جاري تحميل الإنشاءات...",
+    "yourGenerations": "إنشاءات الفيديو الخاصة بك",
+    "yourGenerationsDescription": "إدارة إنشاءات فيديو Google Veo الخاصة بك",
+    "noGenerations": "لا توجد إنشاءات فيديو حتى الآن",
+    "createFirstVideo": "أنشئ أول فيديو بالذكاء الاصطناعي باستخدام Google Veo",
+    "status": {
+      "processing": "قيد المعالجة",
+      "completed": "مكتمل",
+      "failed": "فشل"
+    },
+    "refreshStatus": "تحديث الحالة",
+    "download": "تنزيل",
+    "delete": "حذف",
+    "preview": "معاينة",
+    "errors": {
+      "enterPrompt": "الرجاء إدخال نص توجيهي للفيديو",
+      "failedToGenerate": "فشل في إنشاء الفيديو",
+      "failedToDelete": "فشل في حذف الإنشاء",
+      "failedToDownload": "فشل في تنزيل الفيديو",
+      "unknown": "حدث خطأ غير معروف"
+    },
+    "success": {
+      "generationStarted": "بدأ إنشاء الفيديو",
+      "generationStartedDescription": "جاري إنشاء الفيديو الخاص بك. قد يستغرق هذا عدة دقائق.",
+      "generationComplete": "اكتمل إنشاء الفيديو",
+      "generationCompleteDescription": "الفيديو الخاص بك جاهز للعرض والتنزيل",
+      "deleted": "تم حذف الإنشاء بنجاح"
+    },
+    "download": {
+      "started": "بدأ التنزيل",
+      "description": "بدأ تنزيل الفيديو الخاص بك"
+    }
+  },
+  "credits": {
+    "title": "الرصيد",
+    "subtitle": "إدارة رصيدك واشتراكك",
+    "description": "إدارة رصيدك وخطط الاشتراك",
+    "availableCredits": "الرصيد المتاح",
+    "monthlyUsage": "الاستخدام الشهري",
+    "currentPlan": "الخطة الحالية",
+    "noPlan": "لا توجد خطة",
+    "creditsPerMonth": "رصيد/شهر",
+    "subscribeToPlan": "اشترك في خطة للبدء",
+    "manageSubscription": "إدارة الاشتراك",
+    "upgradePlan": "ترقية الخطة",
+    "creditPackages": "باقات الرصيد",
+    "subscriptionPlans": "خطط الاشتراك",
+    "transactionHistory": "سجل المعاملات",
+    "creditUsage": "استخدام الرصيد",
+    "creditUsageDescription": "يتم استهلاك الرصيد عند إنشاء مقاطع فيديو أو صور رمزية أو استخدام ميزات أخرى. قد تستهلك الميزات المختلفة كميات مختلفة من الرصيد.",
+    "loadingCredits": "جاري تحميل الرصيد...",
+    "failedToLoadCredits": "فشل في تحميل بيانات الرصيد. يرجى المحاولة مرة أخرى.",
+    "noPackagesFound": "لم يتم العثور على باقات رصيد. اشترِ رصيدًا للبدء.",
+    "oneTimePayment": "دفعة لمرة واحدة",
+    "payWithStripe": "الدفع بواسطة Stripe",
+    "payWithFatora": "الدفع بواسطة فاتورة",
+    "manualCreditPurchase": "شراء رصيد يدوي",
+    "manualCreditDescription": "استخدم هذا الخيار إذا كان الدفع عبر Stripe غير متاح",
+    "plan": "الخطة",
+    "amount": "المبلغ",
+    "purchaseCredits": "شراء رصيد",
+    "currentSubscription": "الاشتراك الحالي",
+    "currentSubscriptionDescription": "أنت مشترك حاليًا في خطة {planName}. اشتراكك سوف {renewalStatus}.",
+    "willRenew": "يتجدد تلقائيًا",
+    "willEnd": "ينتهي في {date}",
+    "popular": "شائع",
+    "perMonth": "شهريًا",
+    "currentPlanLabel": "الخطة الحالية",
+    "subscribe": "اشتراك",
+    "recentTransactions": "المعاملات الأخيرة",
+    "yourCreditUsage": "استخدام الرصيد والمشتريات",
+    "noTransactionsFound": "لم يتم العثور على معاملات",
+    "downloadStatement": "تنزيل كشف الحساب",
+    "statementDownload": "تنزيل كشف الحساب",
+    "statementDownloadDescription": "ستقوم هذه الميزة بتنزيل كشف حساب لمعاملاتك في التطبيق الفعلي.",
+    "fromLastMonth": "من الشهر الماضي",
+    "creditsRemaining": "رصيد متبقي",
+    "purchasedOn": "تم الشراء في",
+    "usage": "الاستخدام",
+    "neverExpires": "لا تنتهي أبدًا",
+    "expired": "منتهية الصلاحية",
+    "expiresIn": "تنتهي خلال {days} أيام",
+    "expiresInOne": "تنتهي غدًا",
+    "expiresInZero": "تنتهي اليوم",
+    "paymentSuccessful": "تمت عملية الدفع بنجاح",
+    "paymentSuccessfulDescription": "تمت معالجة الدفع بنجاح. تمت إضافة الرصيد إلى حسابك.",
+    "paymentCanceled": "تم إلغاء الدفع",
+    "paymentCanceledDescription": "تم إلغاء الدفع. لم يتم إجراء أي رسوم.",
+    "paymentVerificationFailed": "فشل التحقق من الدفع",
+    "failedToVerifyPayment": "فشل في التحقق من الدفع",
+    "paymentVerified": "تم التحقق من الدفع",
+    "planActive": "خطة {plan} الخاصة بك نشطة الآن.",
+    "processing": "جاري المعالجة...",
+    "creditsActivePackage": "باقة رصيد نشطة",
+    "creditsActivePackages": "باقات رصيد نشطة"
+  }
+}
