@@ -24,9 +24,12 @@ export async function middleware(req: NextRequest) {
     "/auth/confirm",
   ]
 
-  const isAuthRoute = authRoutes.some((route) => req.nextUrl.pathname.startsWith(route))
+  // Define admin routes
+  const adminRoutes = ["/admin"]
+  const isAdminRoute = req.nextUrl.pathname.startsWith("/admin") && !req.nextUrl.pathname.startsWith("/admin/login")
   const isAdminLoginRoute = req.nextUrl.pathname === "/admin/login"
-  const isAdminRoute = req.nextUrl.pathname.startsWith("/admin") && !isAdminLoginRoute
+
+  const isAuthRoute = authRoutes.some((route) => req.nextUrl.pathname.startsWith(route))
 
   // Special case for the root path - redirect to dashboard if authenticated
   if (req.nextUrl.pathname === "/" && isAuthenticated) {
@@ -41,24 +44,19 @@ export async function middleware(req: NextRequest) {
     return NextResponse.redirect(redirectUrl)
   }
 
-  // If the user is not authenticated and trying to access an admin route (but not admin login)
+  // If the user is not authenticated and trying to access an admin route
   if (!isAuthenticated && isAdminRoute) {
     const redirectUrl = new URL("/admin/login", req.url)
     return NextResponse.redirect(redirectUrl)
   }
 
-  // If the user is authenticated and trying to access admin routes, check if they're an admin
+  // If the user is authenticated but trying to access admin routes, check if they're an admin
   if (isAuthenticated && isAdminRoute) {
-    try {
-      const { data: profile } = await supabase.from("profiles").select("is_admin").eq("id", session.user.id).single()
+    // Get the user's profile to check if they're an admin
+    const { data: profile } = await supabase.from("profiles").select("is_admin").eq("id", session.user.id).single()
 
-      // If not an admin, redirect to the dashboard
-      if (!profile || !profile.is_admin) {
-        const redirectUrl = new URL("/dashboard", req.url)
-        return NextResponse.redirect(redirectUrl)
-      }
-    } catch (error) {
-      // If there's an error checking admin status, redirect to dashboard
+    // If not an admin, redirect to the dashboard
+    if (!profile || !profile.is_admin) {
       const redirectUrl = new URL("/dashboard", req.url)
       return NextResponse.redirect(redirectUrl)
     }
@@ -66,23 +64,8 @@ export async function middleware(req: NextRequest) {
 
   // If the user is authenticated and trying to access the admin login page
   if (isAuthenticated && isAdminLoginRoute) {
-    try {
-      const { data: profile } = await supabase.from("profiles").select("is_admin").eq("id", session.user.id).single()
-
-      // If they're an admin, redirect to the admin dashboard
-      if (profile && profile.is_admin) {
-        const redirectUrl = new URL("/admin/dashboard", req.url)
-        return NextResponse.redirect(redirectUrl)
-      } else {
-        // If they're not an admin, redirect to regular dashboard
-        const redirectUrl = new URL("/dashboard", req.url)
-        return NextResponse.redirect(redirectUrl)
-      }
-    } catch (error) {
-      // If there's an error, redirect to dashboard
-      const redirectUrl = new URL("/dashboard", req.url)
-      return NextResponse.redirect(redirectUrl)
-    }
+    // Skip admin check for the login page - just let them access it
+    return res
   }
 
   // If the user is authenticated and trying to access an auth route
