@@ -2,20 +2,18 @@ import type React from "react"
 import { redirect } from "next/navigation"
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
 import { cookies } from "next/headers"
+import { headers } from "next/headers"
 
 import AdminSidebar from "@/components/admin/admin-sidebar"
 import AdminHeader from "@/components/admin/admin-header"
 
-export default async function AdminLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  // Get the current pathname to check if it's the login page
-  const pathname = new URL(process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000").pathname
+export default async function AdminLayout({ children }: { children: React.ReactNode }) {
+  // Get the current pathname
+  const headersList = headers()
+  const pathname = headersList.get("x-pathname") || headersList.get("x-invoke-path") || ""
 
-  // If this is the admin login page, don't do any auth checks
-  if (pathname === "/admin/login") {
+  // Don't apply authentication checks for admin login page
+  if (pathname === "/admin/login" || pathname.endsWith("/admin/login")) {
     return <>{children}</>
   }
 
