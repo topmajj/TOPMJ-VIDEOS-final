@@ -6,6 +6,11 @@ export async function middleware(req: NextRequest) {
   const res = NextResponse.next()
   const supabase = createMiddlewareClient({ req, res })
 
+  // Allow /admin/login to be completely public - bypass all logic
+  if (req.nextUrl.pathname === "/admin/login") {
+    return res
+  }
+
   const {
     data: { session },
   } = await supabase.auth.getSession()
