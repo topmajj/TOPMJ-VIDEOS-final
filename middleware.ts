@@ -1,12 +1,11 @@
 import { createMiddlewareClient } from "@supabase/auth-helpers-nextjs"
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
-import { adminMiddleware } from "./lib/admin-middleware"
 
 export async function middleware(req: NextRequest) {
-  // Handle admin routes with separate middleware
-  if (req.nextUrl.pathname.startsWith("/admin")) {
-    return adminMiddleware(req)
+  // IMPORTANT: Completely bypass middleware for admin login
+  if (req.nextUrl.pathname === "/admin/login") {
+    return NextResponse.next()
   }
 
   const res = NextResponse.next()
@@ -30,6 +29,9 @@ export async function middleware(req: NextRequest) {
     "/auth/confirm",
   ]
 
+  // Define admin routes (excluding login)
+  const isAdminRoute = req.nextUrl.pathname.startsWith("/admin") && req.nextUrl.pathname !== "/admin/login"
+
   const isAuthRoute = authRoutes.some((route) => req.nextUrl.pathname.startsWith(route))
 
   // Special case for the root path - redirect to dashboard if authenticated
@@ -45,6 +47,24 @@ export async function middleware(req: NextRequest) {
     return NextResponse.redirect(redirectUrl)
   }
 
+  // If the user is not authenticated and trying to access an admin route (except login)
+  if (!isAuthenticated && isAdminRoute) {
+    const redirectUrl = new URL("/admin/login", req.url)
+    return NextResponse.redirect(redirectUrl)
+  }
+
+  // If the user is authenticated but trying to access admin routes, check if they're an admin
+  if (isAuthenticated && isAdminRoute) {
+    // Get the user's profile to check if they're an admin
+    const { data: profile } = await supabase.from("profiles").select("is_admin").eq("id", session.user.id).single()
+
+    // If not an admin, redirect to the dashboard
+    if (!profile || !profile.is_admin) {
+      const redirectUrl = new URL("/dashboard", req.url)
+      return NextResponse.redirect(redirectUrl)
+    }
+  }
+
   // If the user is authenticated and trying to access an auth route
   if (isAuthenticated && isAuthRoute) {
     const redirectUrl = new URL("/dashboard", req.url)
@@ -55,5 +75,8 @@ export async function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|.*\\.svg).*)"],
+  matcher: [
+    // Match all paths except static assets and admin login
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.svg).*)",
+  ],
 }
