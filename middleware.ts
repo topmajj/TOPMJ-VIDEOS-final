@@ -3,11 +3,6 @@ import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
 export async function middleware(req: NextRequest) {
-  // IMPORTANT: Completely bypass middleware for admin login
-  if (req.nextUrl.pathname === "/admin/login") {
-    return NextResponse.next()
-  }
-
   const res = NextResponse.next()
   const supabase = createMiddlewareClient({ req, res })
 
@@ -30,7 +25,7 @@ export async function middleware(req: NextRequest) {
   ]
 
   // Define admin routes (excluding login)
-  const isAdminRoute = req.nextUrl.pathname.startsWith("/admin") && req.nextUrl.pathname !== "/admin/login"
+  const isAdminRoute = req.nextUrl.pathname.startsWith("/admin")
 
   const isAuthRoute = authRoutes.some((route) => req.nextUrl.pathname.startsWith(route))
 
@@ -47,7 +42,7 @@ export async function middleware(req: NextRequest) {
     return NextResponse.redirect(redirectUrl)
   }
 
-  // If the user is not authenticated and trying to access an admin route (except login)
+  // If the user is not authenticated and trying to access an admin route
   if (!isAuthenticated && isAdminRoute) {
     const redirectUrl = new URL("/admin/login", req.url)
     return NextResponse.redirect(redirectUrl)
@@ -76,7 +71,7 @@ export async function middleware(req: NextRequest) {
 
 export const config = {
   matcher: [
-    // Match all paths except static assets and admin login
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.svg).*)",
+    // Exclude admin/login completely from middleware
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.svg|admin/login).*)",
   ],
 }
