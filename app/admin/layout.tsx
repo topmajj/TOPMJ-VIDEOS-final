@@ -6,7 +6,19 @@ import { cookies } from "next/headers"
 import AdminSidebar from "@/components/admin/admin-sidebar"
 import AdminHeader from "@/components/admin/admin-header"
 
-export default async function AdminLayout({ children }: { children: React.ReactNode }) {
+export default async function AdminLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  // Get the current pathname to check if it's the login page
+  const pathname = new URL(process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000").pathname
+
+  // If this is the admin login page, don't do any auth checks
+  if (pathname === "/admin/login") {
+    return <>{children}</>
+  }
+
   const supabase = createServerComponentClient({ cookies })
 
   // Check if user is authenticated and is an admin
