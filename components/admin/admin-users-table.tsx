@@ -243,7 +243,8 @@ export default function AdminUsersTable({ users, onUserUpdated }: AdminUsersTabl
                 </div>
               </TableHead>
               <TableHead>Last Sign In</TableHead>
-              <TableHead className="text-right">Actions</TableHead>
+              <TableHead>Admin Status</TableHead>
+              <TableHead className="w-[70px]">Actions</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -284,6 +285,17 @@ export default function AdminUsersTable({ users, onUserUpdated }: AdminUsersTabl
                 <TableCell>{format(new Date(user.created_at), "MMM d, yyyy")}</TableCell>
                 <TableCell>
                   {user.last_sign_in_at ? format(new Date(user.last_sign_in_at), "MMM d, yyyy") : "Never"}
+                </TableCell>
+                <TableCell>
+                  <div className="flex items-center space-x-2">
+                    <Switch
+                      checked={user.profile?.is_admin || false}
+                      onCheckedChange={() => toggleAdminStatus(user.id, user.profile?.is_admin || false)}
+                      disabled={isUpdating}
+                      aria-label={`Toggle admin status for ${user.profile?.first_name || user.email}`}
+                    />
+                    <span className="text-xs text-muted-foreground">{user.profile?.is_admin ? "Admin" : "User"}</span>
+                  </div>
                 </TableCell>
                 <TableCell className="text-right">
                   <DropdownMenu>
